@@ -1,14 +1,14 @@
 /** @jsx jsx */
 import { jsx, Container, Flex, Button } from "theme-ui";
 import { keyframes } from "@emotion/core";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import Link from "next/link";
 import Logo from "components/logo";
+import footerlogo from "../../assets/footerlogo.png";
 import { DrawerProvider } from "contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
 
-import LogoDark from "assets/logo-dark.svg";
-import logo from "assets/logo.jpg";
 import Divider from "assets/divider.svg";
 
 export default function Header({ className }) {
@@ -16,21 +16,11 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={logo} />
+          <Logo src={footerlogo} style={{ width: "400px" }} />
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
-              <Link
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                key={i}
-              >
-                {label}
-              </Link>
+              <Link href={path}>{label}</Link>
             ))}
           </Flex>
 
@@ -80,8 +70,8 @@ const styles = {
       backgroundRepeat: "no-repeat",
       backgroundPosition: "center bottom",
       backgroundSize: "contain",
-      backgroundColor: ["#FEEDEF", null, null, null, "transparent"],
-      color: "primary",
+      backgroundColor: ["white", null, null, null, "white"],
+      color: "#013289",
       fontWeight: "bold",
       py: ["12px", null, null, null, 2],
       px: [3, null, null, null, 0],

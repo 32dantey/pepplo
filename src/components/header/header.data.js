@@ -1,18 +1,19 @@
 export default [
   {
-    path: 'home',
-    label: 'Home',
+    path: "/",
+    label: "Home",
   },
   {
-    path: 'feature',
-    label: 'Features',
+    path: "/hardware",
+    label: "Hardware",
   },
   {
-    path: 'feedback',
-    label: 'Feedback',
+    path: "/",
+    label: "Solutions",
   },
+
   {
-    path: 'support',
-    label: 'Support',
+    path: "/",
+    label: "Contact",
   },
 ];

@@ -14,7 +14,7 @@ export default function Logo({ src, ...rest }) {
       }}
       {...rest}
     >
-      <Image src={src} alt="startup landing logo" style={{ width: "40%" }} />
+      <Image src={src} alt="startup landing logo" style={{ width: "200px" }} />
     </Link>
   );
 }

@@ -2,33 +2,29 @@
 import { jsx, Container, Box } from "theme-ui";
 import TextFeature from "components/text-feature";
 import Image from "components/image";
+import truckImage from "../../assets/images/truckImage.jpg";
 import { IoIosCheckmarkCircle } from "react-icons/io";
-import mobileImage from "assets/images/mobileImage.png";
+
 import ProfitThumb from "assets/images/business-profit.png";
 import DrawingArrow from "assets/drawing-arrow.svg";
 
 const data = {
-  title: "Benefits of using Pepplo web API for fleet and assets tracking",
+  title: "Vehicle Tracking and Asset Tracking Devices",
   description:
-    "Pepplo's Web API allows broad control of Pepplo suite of vehicle tracking features from most programming environments. This allows anything from automated scripting of common tasks to seamless integration into customer user interfaces alongside other business-specific tools.",
-  btnName: "Explore Details",
-  btnURL: "#",
+    "Whether you’re using location tracking to monitor a vehicle, employee, or other high-value asset, Pepplo has a GPS tracking device ready to suit your needs. From vehicle tracking devices such as the LMU-2630, to the water-resistant GL300MA asset tracking device, to the solar-powered XT-4970, we have the right GPS tracking device to help you meet your fleet management goals!",
+
   points: [
     {
       icon: <IoIosCheckmarkCircle />,
-      text: "Device Modification",
+      text: "Vehicle tracking devices",
     },
     {
       icon: <IoIosCheckmarkCircle />,
-      text: "Position Updates",
+      text: "Asset tracking devices",
     },
     {
       icon: <IoIosCheckmarkCircle />,
-      text: "Customized Notifications",
-    },
-    {
-      icon: <IoIosCheckmarkCircle />,
-      text: "Messaging",
+      text: "Satellite and GPS",
     },
   ],
 };
@@ -38,14 +34,12 @@ export default function BusinessProfit() {
     <section sx={{ variant: "section.profit" }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={mobileImage} alt="Thumbnail" width="700" height="565" />
+          <Image src={truckImage} alt="Thumbnail" width="565" height="430" />
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature
             title={data.title}
             description={data.description}
-            btnName={data.btnName}
-            btnURL={data.btnURL}
             points={data.points}
           />
         </Box>

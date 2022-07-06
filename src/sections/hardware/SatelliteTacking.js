@@ -6,43 +6,40 @@ import SectionHeader from "components/section-header";
 const data = [
   {
     id: 1,
-    title: "TRUCK FLEETS",
-    text: "Monitor a truck's fleet cargo to ensure the ship is delivered to its destination safely and in good condition.",
+    title: "XT-4900",
+    text: (
+      <div>
+        <p>* Solar powered</p>
+        <p>* Integrated GPS receiver for tracking applications</p>
+        <p>* Configurable, periodic reporting to extend battery charge</p>
+        <p>* Over-the-air application firmware upgrade</p>
+      </div>
+    ),
   },
   {
     id: 2,
-    title: "HEAVY EQUIPMENT",
-    text: "Mitigate and reduce theft by tracking equipment in real time while keeping heavy equipments fleet maintained.",
-  },
-  {
-    id: 3,
-    title: "OIL AND GAS",
-    text: "Remotely monitor the status and content level of oil & gas transportation equipment with fleet management software.",
-  },
-  {
-    id: 4,
-    title: "CONSTRUCTION",
-    text: "Track a construction fleet vehicle's performance and vehicles location to help safeguard their vailable assets in real time.",
-  },
-  {
-    id: 5,
-    title: "PUBLIC SAFETY",
-    text: "Knowing the location of every emergency vehicle asset at all times with Gps fleet tracking is critical in emergency response situations.",
-  },
-  {
-    id: 6,
-    title: "OTHER",
-    text: "Monitor a variety of assets: Monile Service Providers, RVs , Executive fleets, Lawn care and landscaping.",
+    title: "XT-2400",
+    text: (
+      <div>
+        <p>* Bluetooth interface for configurations</p>
+        <p>* Solar powered with satellite communications</p>
+        <p>* IP69K and MIL-STD-810G standards</p>
+        <p>* Multiple mounting options available</p>
+      </div>
+    ),
   },
 ];
 
 export default function WorkFlow() {
   return (
-    <section sx={{ variant: "section.workflow" }}>
+    <section
+      style={{ backgroundColor: "white", marginBottom: "100px" }}
+      sx={{ variant: "section.workflow" }}
+    >
       <Container>
         <SectionHeader
-          title="Industries we serve"
-          description="Our solutions can be found in light vehicle fleets, large trucks in commercial shipping, heavy equipment in construction, snow plows and street sweepers, public safety vehicles, and many others."
+          title="Satellite & GPS Tracking"
+          description="Pepplo satellite and solar powered GPS tracking devices provide extended battery life, so you can still meet your location tracking needs while drastically reducing the amount of time and money spent on battery maintenance."
         />
 
         <Grid sx={styles.grid}>

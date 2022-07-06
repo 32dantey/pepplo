@@ -4,6 +4,8 @@ import { Container, Flex, Box, Heading, Text, Image } from "theme-ui";
 import { Link } from "components/link";
 import Subscribe from "components/subscribe";
 import BannerThumb from "assets/images/banner-thumb.png";
+import fleetTruck from "assets/images/fleetTruck.png";
+import truckMap from "assets/images/truckMap.jpg";
 
 import client1 from "assets/sponsor/paypal.svg";
 import client2 from "assets/sponsor/google.svg";
@@ -57,7 +59,13 @@ export default function Banner() {
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerThumb} alt="banner" width="740" height="782" />
+          <Image
+            src={fleetTruck}
+            alt="banner"
+            width="740"
+            height="782"
+            style={{ height: "90%", width: "100%" }}
+          />
         </Box>
       </Container>
     </section>
