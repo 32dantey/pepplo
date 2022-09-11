@@ -46,16 +46,6 @@ export default function Banner() {
             Management Solutions For Today's Businesses
           </Text>
           <Subscribe />
-          <Flex sx={styles.sponsorBox}>
-            <Text sx={styles.sponsorTitle}>Sponsored by:</Text>
-            <Box sx={styles.sponsorBox.sponsor}>
-              {data.map((item, index) => (
-                <Link path={item.path} key={`client-key${index}`}>
-                  <Image src={item.image} alt={item.title} />
-                </Link>
-              ))}
-            </Box>
-          </Flex>
         </Box>
 
         <Box sx={styles.banner.imageBox}>

@@ -29,7 +29,7 @@ export default function IndexPage() {
         <CoreFeature />
         {/* <Faq /> */}
         <ClientFeedback />
-        <Support />
+        {/* <Support /> */}
       </Layout>
     </ThemeProvider>
   );

@@ -5,6 +5,7 @@ import { keyframes } from "@emotion/core";
 import Link from "next/link";
 import Logo from "components/logo";
 import footerlogo from "../../assets/footerlogo.png";
+import SUDTRAK from "../../assets/SUDTRAK.png";
 import { DrawerProvider } from "contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
@@ -16,7 +17,7 @@ export default function Header({ className }) {
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={footerlogo} style={{ width: "400px" }} />
+          <Logo src={SUDTRAK} style={{ width: "200px" }} />
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
@@ -29,7 +30,7 @@ export default function Header({ className }) {
             variant="secondary"
             aria-label="Get Started"
           >
-            Get Started
+            Request a demo
           </Button>
 
           <MobileDrawer />
