@@ -13,7 +13,7 @@ export default [
   },
 
   {
-    path: "/",
+    path: "/contact",
     label: "Contact",
   },
 ];

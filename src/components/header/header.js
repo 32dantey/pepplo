@@ -1,4 +1,7 @@
 /** @jsx jsx */
+import { useState } from "react";
+import { TextInput, Textarea, Modal, Group } from "@mantine/core";
+import { useForm } from "@mantine/form";
 import { jsx, Container, Flex, Button } from "theme-ui";
 import { keyframes } from "@emotion/core";
 // import { Link } from "react-scroll";
@@ -9,10 +12,27 @@ import SUDTRAK from "../../assets/SUDTRAK.png";
 import { DrawerProvider } from "contexts/drawer/drawer.provider";
 import MobileDrawer from "./mobile-drawer";
 import menuItems from "./header.data";
+import { GetInTouch } from "./modal";
 
 import Divider from "assets/divider.svg";
 
 export default function Header({ className }) {
+  const [opened, setOpened] = useState(false);
+
+  const form = useForm({
+    initialValues: {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    },
+    validate: {
+      name: (value) => value.trim().length < 2,
+      email: (value) => !/^\S+@\S+$/.test(value),
+      subject: (value) => value.trim().length === 0,
+    },
+  });
+
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className} id="header">
@@ -26,6 +46,7 @@ export default function Header({ className }) {
           </Flex>
 
           <Button
+            onClick={() => setOpened(true)}
             className="donate__btn"
             variant="secondary"
             aria-label="Get Started"
@@ -36,6 +57,22 @@ export default function Header({ className }) {
           <MobileDrawer />
         </Container>
       </header>
+
+      <Modal
+        opened={opened}
+        onClose={() => setOpened(false)}
+        withCloseButton={false}
+        zIndex={2000}
+        styles={(theme) => ({
+          modal: {
+            backgroundColor: "transparent",
+            padding: "0px",
+            width: "fit-content"
+          },
+        })}
+      >
+        <GetInTouch />
+      </Modal>
     </DrawerProvider>
   );
 }
