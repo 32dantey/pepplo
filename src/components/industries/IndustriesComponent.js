@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx, Container, Box } from "theme-ui";
 import { IoIosCheckmarkCircle } from "react-icons/io";
-import { ContactForm } from "./contactForm";
 
 const data = {
   title: "Vehicle Tracking and Asset Tracking Devices",

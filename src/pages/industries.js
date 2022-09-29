@@ -7,9 +7,9 @@ import VehicleTracking from "sections/hardware/VehicleTracking";
 import SatelliteTracking from "sections/hardware/SatelliteTacking";
 import HardwareOffered from "sections/hardware/HardwareOffered";
 import AssetTracking from "sections/hardware/AssetTracking";
-import IndustriesComponent from "components/contactus/IndustriesComponent";
+import IndustriesComponent from "components/industries/IndustriesComponent";
 
-function Contact() {
+function Industries() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
@@ -19,4 +19,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Industries;
