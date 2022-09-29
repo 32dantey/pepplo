@@ -1,11 +1,11 @@
-import React from 'react';
-import Head from 'next/head';
+import React from "react";
+import Head from "next/head";
 
 export default function SEO({
-  description = 'startup business landing page',
-  author = 'RedQ, Inc',
+  description = "GPS powered Asset and Fleet Tracking Software",
+  author = "Sudtrak",
   meta,
-  title = 'Startup Business Landing 011',
+  title = "At Pepplo we offers a vast array of services as well as the ability to create custom, tailored solutions. GPS Vehicle Tracking and Fleet Management Solutions For todays business",
 }) {
   const metaData = [
     {
