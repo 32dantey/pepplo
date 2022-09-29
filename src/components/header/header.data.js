@@ -1,11 +1,11 @@
 export default [
   {
     path: "/",
-    label: "Home",
+    label: "Solutions",
   },
   {
-    path: "/",
-    label: "Services",
+    path: "/industries",
+    label: "Industries",
   },
   {
     path: "/hardware",
@@ -13,12 +13,9 @@ export default [
   },
 
   {
-    path: "/",
-    label: "Industries",
-  },
-
-  {
-    path: "/contact",
-    label: "Contact",
+    path: "/Contact",
+    label: "About",
   },
 ];
+
+//solutions, industries, hardware, about

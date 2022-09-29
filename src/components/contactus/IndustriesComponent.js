@@ -24,11 +24,11 @@ const data = {
   ],
 };
 
-export default function ContactUS() {
+export default function IndustriesComponent() {
   return (
     <section sx={{ variant: "section.profit" }}>
       <Container sx={styles.containerBox}>
-        <ContactForm />
+        <h1>Industries here</h1>
       </Container>
     </section>
   );

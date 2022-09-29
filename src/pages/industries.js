@@ -7,13 +7,13 @@ import VehicleTracking from "sections/hardware/VehicleTracking";
 import SatelliteTracking from "sections/hardware/SatelliteTacking";
 import HardwareOffered from "sections/hardware/HardwareOffered";
 import AssetTracking from "sections/hardware/AssetTracking";
-import ContactUS from "components/contactus/contactUs";
+import IndustriesComponent from "components/contactus/IndustriesComponent";
 
 function Contact() {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <ContactUS />
+        <IndustriesComponent />
       </Layout>
     </ThemeProvider>
   );
